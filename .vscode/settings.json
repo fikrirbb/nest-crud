@@ -1,0 +1,7 @@
+{
+    "vetur.format.options.tabSize": 2,
+    "deno.enable": false,
+    "editor.formatOnSave": true,
+    "eslint.enable": false,
+    "prettier.tabWidth": 2
+}
