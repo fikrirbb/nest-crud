@@ -1,4 +1,4 @@
-import { CountryModel } from "src/modules/country/data/models/country.model";
+import { CountryModel } from "src/modules/country/data/models/Country.model";
 import { CountryEntity } from "src/modules/country/domain/entities/country.entity";
 import {
   Entity,
@@ -27,7 +27,7 @@ export class CarModel extends CarEntity {
   @ManyToOne(() => ModelModel, (model) => model.cars)
   model!: ModelEntity;
 
-  @ManyToOne(() => CountryModel, (country) => country.cars)
+  @ManyToOne(() => CountryModel)
   country!: CountryEntity;
 
   @Column({ length: 255 })

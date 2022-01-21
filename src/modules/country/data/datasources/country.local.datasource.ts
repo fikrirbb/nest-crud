@@ -1,4 +1,4 @@
-import { CountryModel } from "../../data/models/country.model";
+import { CountryModel } from "../../data/models/Country.model";
 import {
   ICreateCountry,
   IGetCountryById,

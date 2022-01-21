@@ -3,13 +3,12 @@ import { INJECTABLES } from "../../common/interfaces/injectables";
 import { TypeOrmModule } from "@nestjs/typeorm";
 
 import { Module } from "@nestjs/common";
-import { CountryModel } from "./data/models/country.model";
+import { CountryModel } from "./data/models/Country.model";
 import { CountryLocalDataSourceImplementation } from "./data/datasources/country.local.datasource";
 import { CountryRepositoryImplementation } from "./data/repositories/country.repository.implementation";
 import { CreateCountry } from "./domain/usecases/country/create_country";
 import { GetCountries } from "./domain/usecases/country/get_countries";
 import { GetCountryById } from "./domain/usecases/country/get_country_by_id";
-import { CountryController } from "./country.controller";
 import { CountryResolver } from "./presentation/resolvers/country.resolver";
 
 const countryLocalDataSourceInjection = {
@@ -39,7 +38,6 @@ const getCountryByIdInjection = {
 
 @Module({
   imports: [TypeOrmModule.forFeature([CountryModel]), CommonModule],
-  controllers: [CountryController],
   providers: [
     countryRepositoryInjection,
     countryLocalDataSourceInjection,

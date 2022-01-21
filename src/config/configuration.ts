@@ -28,7 +28,7 @@ export const configuration = (): Configuration => {
       dbHost: process.env.DB_HOST as string,
       dbName: process.env.DB_NAME as string,
       username: process.env.DB_USERNAME as string,
-      password: process.env.DB_PASSWORD as string,
+      password: "",
     },
   };
 
