@@ -1,9 +1,18 @@
-## Test Project NestJS
+## Test Project CRUD NestJS
 
 ## Installation
 
 ```bash
 $ npm install
+```
+
+Update .env
+```bash
+DB_HOST=localhost
+DB_USERNAME=root
+DB_PASSWORD=
+DB_NAME=test-nest
+SERVER_PORT=3001
 ```
 
 ## Running the app
@@ -19,15 +28,11 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
+graphql
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+http://localhost:3001/graphql
 ```
+
+## Live Sample
+
+[https://sample.hadirya.id/graphql](https://sample.hadirya.id/graphql)
